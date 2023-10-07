@@ -11,6 +11,7 @@ DOT_OUT_DIR="out/dot" # Diretório de saída dos arquivos .dot
 IMAGE_OUT_DIR="out/images" # Diretório de saída dos grafos de execução
 
 # Cria diretórios
+sudo rm -rf "$OUT_ROOT_DIR"
 mkdir "$OUT_ROOT_DIR"
 mkdir "$BIN_OUT_DIR"
 mkdir "$GPROF_OUT_DIR"

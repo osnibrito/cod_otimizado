@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 100000
+#define ARRAY_SIZE 1000000
 #define RAND_SEED 1
 #define MAX_VALUE 1000000
 
@@ -176,7 +176,7 @@ void heapSort(int* arr) {
 }
 
 int main(int argc, char** argv) {
-    int arr[ARRAY_SIZE];
+    int* arr = malloc(ARRAY_SIZE * sizeof(int));
 
     fill_array(arr);
     clean_cache();
@@ -190,7 +190,7 @@ int main(int argc, char** argv) {
     clean_cache();
     heapSort(arr);
 
-
+    free(arr);
 
     return 0;
 }
