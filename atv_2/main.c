@@ -11,9 +11,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 1000
+#define ARRAY_SIZE 100000
 #define RAND_SEED 1
-#define MAX_VALUE 1000
+#define MAX_VALUE 1000000
 
 #define KB (1024)
 #define MB (1024 * KB)

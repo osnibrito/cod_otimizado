@@ -1,5 +1,5 @@
 all:
-	gcc ./main.c -o ./bin/main 
+	gcc ./main.c -pg -o ./bin/main 
 
 run:
 	bin/main

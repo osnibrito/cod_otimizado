@@ -1,0 +1,27 @@
+digraph {
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	1 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="main\n100.00%\n(0.00%)"];
+	1 -> 2 [arrowsize="0.67", color="#0aaf28", fontcolor="#0aaf28", fontsize="10.00", label="45.45%\n3×", labeldistance="1.82", penwidth="1.82"];
+	1 -> 4 [arrowsize="0.52", color="#0c968a", fontcolor="#0c968a", fontsize="10.00", label="27.27%\n1×", labeldistance="1.09", penwidth="1.09"];
+	1 -> 5 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="18.18%\n1×", labeldistance="0.73", penwidth="0.73"];
+	1 -> 9 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n1×", labeldistance="0.50", penwidth="0.50"];
+	2 [color="#0aaf28", fontcolor="#ffffff", fontsize="10.00", label="clean_cache\n45.45%\n(45.45%)\n3×"];
+	3 [color="#0c968a", fontcolor="#ffffff", fontsize="10.00", label="heapify\n27.27%\n(27.27%)\n1625280×"];
+	3 -> 3 [arrowsize="0.52", color="#0c968a", fontcolor="#0c968a", fontsize="10.00", label="1475280×", labeldistance="1.09", penwidth="1.09"];
+	4 [color="#0c968a", fontcolor="#ffffff", fontsize="10.00", label="heapSort\n27.27%\n(0.00%)\n1×"];
+	4 -> 3 [arrowsize="0.52", color="#0c968a", fontcolor="#0c968a", fontsize="10.00", label="27.27%\n150000×", labeldistance="1.09", penwidth="1.09"];
+	5 [color="#0c688a", fontcolor="#ffffff", fontsize="10.00", label="mergeSort\n18.18%\n(0.00%)\n1×"];
+	5 -> 7 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="18.18%\n1×", labeldistance="0.73", penwidth="0.73"];
+	6 [color="#0c688a", fontcolor="#ffffff", fontsize="10.00", label="_merge\n18.18%\n(18.18%)\n99999×"];
+	7 [color="#0c688a", fontcolor="#ffffff", fontsize="10.00", label="_mergeSort\n18.18%\n(0.00%)\n199999×"];
+	7 -> 6 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="18.18%\n99999×", labeldistance="0.73", penwidth="0.73"];
+	7 -> 7 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="199998×", labeldistance="0.73", penwidth="0.73"];
+	8 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="partition\n9.09%\n(9.09%)\n66719×"];
+	9 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="quickSort\n9.09%\n(0.00%)\n1×"];
+	9 -> 10 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n1×", labeldistance="0.50", penwidth="0.50"];
+	10 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="_quickSort\n9.09%\n(0.00%)\n133439×"];
+	10 -> 8 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n66719×", labeldistance="0.50", penwidth="0.50"];
+	10 -> 10 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="133438×", labeldistance="0.50", penwidth="0.50"];
+}

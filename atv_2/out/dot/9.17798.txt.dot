@@ -1,0 +1,20 @@
+digraph {
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	1 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="main\n100.00%\n(0.00%)"];
+	1 -> 2 [arrowsize="0.85", color="#c3d606", fontcolor="#c3d606", fontsize="10.00", label="72.73%\n3×", labeldistance="2.91", penwidth="2.91"];
+	1 -> 4 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="18.18%\n1×", labeldistance="0.73", penwidth="0.73"];
+	1 -> 5 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n1×", labeldistance="0.50", penwidth="0.50"];
+	2 [color="#c3d606", fontcolor="#ffffff", fontsize="10.00", label="clean_cache\n72.73%\n(72.73%)\n3×"];
+	3 [color="#0c688a", fontcolor="#ffffff", fontsize="10.00", label="heapify\n18.18%\n(18.18%)\n1625280×"];
+	3 -> 3 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="1475280×", labeldistance="0.73", penwidth="0.73"];
+	4 [color="#0c688a", fontcolor="#ffffff", fontsize="10.00", label="heapSort\n18.18%\n(0.00%)\n1×"];
+	4 -> 3 [arrowsize="0.43", color="#0c688a", fontcolor="#0c688a", fontsize="10.00", label="18.18%\n150000×", labeldistance="0.73", penwidth="0.73"];
+	5 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="mergeSort\n9.09%\n(0.00%)\n1×"];
+	5 -> 7 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n1×", labeldistance="0.50", penwidth="0.50"];
+	6 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="_merge\n9.09%\n(9.09%)\n99999×"];
+	7 [color="#0d367e", fontcolor="#ffffff", fontsize="10.00", label="_mergeSort\n9.09%\n(0.00%)\n199999×"];
+	7 -> 6 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="9.09%\n99999×", labeldistance="0.50", penwidth="0.50"];
+	7 -> 7 [arrowsize="0.35", color="#0d367e", fontcolor="#0d367e", fontsize="10.00", label="199998×", labeldistance="0.50", penwidth="0.50"];
+}
