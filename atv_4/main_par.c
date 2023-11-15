@@ -218,6 +218,8 @@ void heapSort_parallel(int* arr) {
 int main(int argc, char** argv) {
     int* arr = malloc(ARRAY_SIZE * sizeof(int));
 
+    omp_set_num_threads(omp_get_max_threads());
+
     fill_array(arr);
     clean_cache();
     mergeSort_parallel(arr);
