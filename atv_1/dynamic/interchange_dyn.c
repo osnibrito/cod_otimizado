@@ -21,5 +21,8 @@ int main (int argc, char* argv[]){
             }
         }
     }
+    libera_matriz(N, matriz_a);
+    libera_matriz(N, matriz_b);
+    libera_matriz(N, matriz_resultado);
 
 }

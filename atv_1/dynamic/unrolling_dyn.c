@@ -25,4 +25,7 @@ int main (int argc, char* argv[]){
             if(N % 2 != 0) matriz_resultado[i][j] += matriz_a[i][k] * matriz_b[k][j];
         }
     }
+    gera_matriz(N, matriz_a);
+    gera_matriz(N, matriz_b);
+    gera_matriz(N, matriz_resultado);
 }

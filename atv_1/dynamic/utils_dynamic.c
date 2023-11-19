@@ -20,6 +20,14 @@ void gera_matriz(int N, int **matriz){
     }
 	return;
 }
+void libera_matriz(int N, int **matriz){
+    for(int i=0; i<N;i++){
+	free(matriz[i]);
+
+    }
+    free(matriz);
+}
+
 void print_vec(int N, int *vec){
 	for(int i = 0; i < N; i++){
 		printf("%d ", vec[i]);
