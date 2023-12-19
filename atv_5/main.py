@@ -20,7 +20,7 @@ def fib_optimized(n):
 
 #Teste de otimização de concatenação de strings
 def read_words_from_file(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf') as file:
         file_content = file.read()
         words = file_content.split()
         return words
@@ -36,6 +36,7 @@ def string_from_array_optimized(arr):
     for item in arr:
         result_parts.append(str(item))
     result = "".join(result_parts)
+    return result
 
 if __name__ == '__main__':
     # fib(30)
